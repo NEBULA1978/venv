@@ -1,0 +1,31 @@
+Creamos entorno:
+
+python3 -m venv venv
+source venv/bin/activate
+source /home/next/Escritorio/venv/bin/activate
+
+Abro con vscode:
+code venv/
+
+Instalo FastAPI y uvicorn:
+pip install uvicorn fastapi
+
+Creo archivo raiz main.py:
+
+from fastapi import FastAPI
+
+app=FastAPI()
+
+@app.get("/")
+def root():
+    return "Hi,i am Fastapi"
+
+Para iniciar por consola:
+uvicorn main:app --reload
+
+Para ver en navegador:
+
+http://localhost:8000/
+
+"Hi,i am Fastapi"
+
