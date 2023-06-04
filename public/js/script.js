@@ -1,0 +1,1 @@
+alert("Hi, i am a script")
