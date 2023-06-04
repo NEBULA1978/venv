@@ -55,3 +55,19 @@ def root():
 
 http://localhost:8000/docs#/default/root__get
 
+Añado archivo main.py:
+from fastapi import FastAPI
+from fastapi.responses import HTMLResponse, FileResponse
+from fastapi.staticfiles import StaticFiles
+
+app=FastAPI()
+
+app.mount("/static",StaticFiles(directory="./public/static"),)
+
+# Ruta para archivos html
+@app.get("/",response_class=HTMLResponse)
+def root():
+    html_address = "./public/static/html/index.html"
+    return FileResponse(html_address,status_code=200)
+
+ME FALLA AL MOVER ARCHIVOS A STATIC
