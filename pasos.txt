@@ -2,6 +2,8 @@ Creamos entorno:
 
 python3 -m venv venv
 source venv/bin/activate
+
+Para iniciar entorno virtual:
 source /home/next/Escritorio/venv/bin/activate
 
 Abro con vscode:
@@ -56,18 +58,28 @@ def root():
 http://localhost:8000/docs#/default/root__get
 
 Añado archivo main.py:
+
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
 
 app=FastAPI()
 
-app.mount("/static",StaticFiles(directory="./public/static"),)
+app.mount("/static",StaticFiles(directory="./public/static"),name="static")
 
 # Ruta para archivos html
 @app.get("/",response_class=HTMLResponse)
 def root():
-    html_address = "./public/static/html/index.html"
+    html_address = "./public/static/index.html"
     return FileResponse(html_address,status_code=200)
 
-ME FALLA AL MOVER ARCHIVOS A STATIC
+PARA VER EN NAVEGADOR:
+
+http://localhost:8000/
+FUNCIONA
+
+PARA UTILIZAR PLANTILLAS:
+pip install jinja2
+
+Voy minuto 24 de 31 creo carpeta templates y dentro item.html
+Voy minuto 29 mirar id me da error
