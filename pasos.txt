@@ -90,5 +90,20 @@ Para iniciar(go live abajo derecha):
 source "/home/next/Vídeos/varios anteriores/VIDEOS_PROYECTOS/3 Formas diferentes de devolver HTML con FASTAPI _ Construyendo SITIO WEB con FASTAPI/VENV-CLONADO/venv/bin/activate"
 22:20:09 [Five Server] change detected pasos.txt
 
+
+CON UVICORN PONGO ESTAS RUTAS DEPENDIENDO QUE PAGINA QUIERA IR:
 En navegador:
 http://127.0.0.1:5500/public/static/index.html
+
+EN ESTE SERVIDOR:
+  Five Server running at:
+  > Local:    http://localhost:5500
+  > Network:  http://192.168.43.199:5500
+source "/home/next/Vídeos/varios anteriores/VIDEOS_PROYECTOS/3 Formas diferentes de devolver HTML con FASTAPI _ Construyendo SITIO WEB con FASTAPI/VENV-CLONADO/venv/bin/activate"
+
+Creo una ruta en main.py(inicio gon go live) y archivo en templates otro_indexhtmlhtml:
+Accedo del navegador:
+http://127.0.0.1:5500/public/templates/otro_index.html
+
+
+

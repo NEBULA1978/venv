@@ -16,6 +16,13 @@ def root():
     html_address = "./public/static/index.html"
     return FileResponse(html_address,status_code=200)
 
+# Ruta para el segundo archivo html
+@app.get("/otro", response_class=HTMLResponse)
+def otro_html():
+    otro_html_address = "./public/static/otro_index.html"
+    return FileResponse(otro_html_address, status_code=200)
+
+
 # Ruta para Jinja2
 @app.get("/template/{id}", response_class=HTMLResponse)
 def template(request: Request, id: str):
