@@ -82,4 +82,13 @@ PARA UTILIZAR PLANTILLAS:
 pip install jinja2
 
 Voy minuto 24 de 31 creo carpeta templates y dentro item.html
-Voy minuto 29 mirar id me da error
+
+Para iniciar(go live abajo derecha):
+  Five Server running at:
+  > Local:    http://localhost:5500
+  > Network:  http://192.168.43.199:5500
+source "/home/next/Vídeos/varios anteriores/VIDEOS_PROYECTOS/3 Formas diferentes de devolver HTML con FASTAPI _ Construyendo SITIO WEB con FASTAPI/VENV-CLONADO/venv/bin/activate"
+22:20:09 [Five Server] change detected pasos.txt
+
+En navegador:
+http://127.0.0.1:5500/public/static/index.html
